@@ -1,0 +1,23 @@
+.app-bar-project-members {
+  position: relative;
+
+  .app-bar-pm-project-name {
+    flex: 1;
+  }
+}
+
+.container-table::-webkit-scrollbar {
+  width: 7px;
+  border-radius: 2px;
+}
+
+.container-table:hover {
+  &::-webkit-scrollbar-thumb {
+    background: #c8c7c7;
+    border-radius: 2px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: #737373;
+  }
+}

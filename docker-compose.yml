@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  ksteam-srv:
+    image: registry.gitlab.com/koolsoft.ksdevs/ksteam:latest
+    build:
+      context: .
+      dockerfile: ./server.Dockerfile
+
+# services:
+#   ksteam-srv-stage:
+#     image: registry.gitlab.com/koolsoft.ksdevs/ksteam:stage
+#     build:
+#       context: .
+#       dockerfile: ./server.Dockerfile

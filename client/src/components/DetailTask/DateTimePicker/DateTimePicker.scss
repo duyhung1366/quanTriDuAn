@@ -1,0 +1,130 @@
+@import "rsuite/dist/rsuite.css";
+
+.picker-rsuite-container {
+    display: flex;
+
+    .start-create-task {
+        margin-left: 8px;
+        &-label {
+            text-transform: uppercase;
+            color: #AEACB0;
+            font-size: 12px;
+        }
+
+        &-text {
+            width: 115px;
+            font-size: 12px;
+        }
+    }
+
+    .rs-anim-fade.rs-anim-in {
+        left: auto !important;
+        top: auto !important;
+    }
+
+    .rs-picker-has-value.rs-picker-cleanable .rs-picker-toggle.rs-btn {
+        border: none;
+        outline: none;
+        box-shadow: none;
+
+        &:focus {
+            border: none;
+            outline: none;
+            // box-shadow: none;
+        }
+    }
+
+    .rs-picker-toggle-textbox {
+        padding: 0;
+    }
+
+    .picker-start-date-rsuite {
+        opacity: 0;
+        width: 0;
+    }
+
+    .picker-due-date-rsuite {
+        opacity: 0;
+        width: 0;
+    }
+
+    .custom-date-time-picker {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        padding: 0 10px 0 11px;
+
+        .label-date-picker {
+            font-size: 12px;
+            color: #AEACB0;
+        }
+
+        &:hover {
+            .btn-remove-date-picker {
+                opacity: 1;
+            }
+        }
+
+        .btn-remove-date-picker {
+            cursor: pointer;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            width: 14px;
+            height: 14px;
+            transform: rotate(135deg);
+            top: 25px;
+            left: -1px;
+            z-index: 6;
+            opacity: 0;
+
+            svg {
+                width: 10px;
+                height: 10px;
+            }
+
+            circle {
+                fill: #1db954;
+            }
+        }
+    }
+
+
+    .btn-open-date-picker {
+        border: 1px dashed #D9D9D9;
+        width: 40px;
+        height: 40px;
+
+        &:hover {
+            border: 1px dashed #0085ff;
+
+            path {
+                fill: #0085ff;
+            }
+        }
+
+        svg {
+            width: 18px;
+            height: 18px;
+        }
+    }
+
+    .rs-picker-has-value .rs-btn .rs-picker-toggle-value,
+    .rs-picker-has-value .rs-picker-toggle .rs-picker-toggle-value {
+        color: #545962;
+        font-size: 14px;
+        padding: 0;
+    }
+
+    .rs-picker-default .rs-picker-toggle {
+        padding: 0 !important;
+    }
+
+    .rs-picker-date .rs-picker-toggle.rs-btn .rs-picker-toggle-clean {
+        display: none;
+    }
+
+
+
+}

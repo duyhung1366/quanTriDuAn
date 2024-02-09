@@ -1,0 +1,303 @@
+@import "../../styles/mixins.scss";
+
+.tree-item-container {
+  display: flex;
+
+  &:hover {
+    .tree-item-project {
+      .btn-project-setting {
+        opacity: 1;
+      }
+    }
+  }
+
+  .tree-item-project {
+    display: flex;
+
+    .project-item-bar {
+      display: flex;
+      align-items: center;
+
+      .project-item-name {
+        font-size: 16px;
+        font-weight: 500;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        max-width: 160px;
+      }
+    }
+
+    .btn-project-setting {
+      margin-left: auto;
+      margin-right: 0 auto;
+      color: #97aac0;
+      opacity: 0;
+
+      &:hover {
+        .icon-project-morehoriz {
+          color: #0085ff;
+        }
+      }
+
+      .icon-project-morehoriz {
+        font-size: 28px;
+      }
+    }
+  }
+}
+
+.tree-item-mui-slected {
+  background: #dbebff !important;
+
+  .project-item-name {
+    color: #0085ff;
+  }
+}
+
+.tree-item-custom-project {
+  margin: 0 12px;
+  padding: 0 !important;
+  border-radius: 10px;
+
+  &:active {
+    background: #dbebff !important;
+  }
+
+  &:hover {
+    background: #f5f8fb !important;
+  }
+}
+
+.ks-appbar {
+  border-bottom: 1px solid #e5ebf0;
+
+  .ks-toolbar-home {
+    min-height: 52px !important;
+  }
+
+  .input-rename-app-bar {
+    border: none;
+    outline: none;
+    font-size: 26px;
+    font-weight: 500;
+    width: 320px;
+  }
+
+  .app-bar-project {
+    display: flex;
+    align-items: center;
+
+    .app-bar-project-name {
+      font-weight: 500;
+      font-size: 26px;
+      width: fit-content;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 500px;
+      display: flex;
+      align-items: center;
+      margin-right: 20px;
+      @include ellipsis-text(1);
+    }
+
+    .btn-rename-project-appbar svg {
+      width: 24px;
+      height: 24px;
+      margin: 0 5px 0 10px;
+    }
+  }
+  .btn-info-project {
+    cursor: pointer;
+    width: 26px;
+    height: 26px;
+    margin-right: 10px;
+    &:hover {
+      .icon-info-project {
+        color: #0085ff;
+      }
+    }
+  }
+}
+
+.select-all-user {
+  .MuiSelect-select {
+    display: flex;
+  }
+}
+
+.Drawer-left-container {
+  .drawer-left-custom {
+    border-right: 1px solid #e5ebf0;
+  }
+
+  &.isAdmin {
+    .tree-view-project {
+      height: calc(100vh - 205px);
+    }
+  }
+
+  .tree-view-project {
+    overflow: auto;
+    height: calc(100vh - 165px);
+  }
+
+  .tree-view-project::-webkit-scrollbar {
+    width: 8px;
+    border-radius: 10px;
+  }
+
+  &:hover {
+    .tree-view-project::-webkit-scrollbar-thumb {
+      background: #c8c7c7;
+      border-radius: 10px;
+    }
+
+    .tree-view-project::-webkit-scrollbar-thumb:hover {
+      background: #737373;
+    }
+  }
+
+  .search-projects-container {
+    position: relative;
+    margin: 0 15px 10px 12px;
+
+    .input-search-projects {
+      border: 1px solid #e8e8ea;
+      outline: none;
+      width: 270px;
+      height: 37px;
+      padding: 0 10px 0 25px;
+      border-radius: 7px;
+
+      &::placeholder {
+        color: #aeacb0;
+      }
+    }
+
+    .icon-search-project {
+      position: absolute;
+      margin: 11px 0 0 -264px;
+      font-size: 16px;
+      color: #545962;
+    }
+  }
+}
+
+.Popover-settings-project {
+  border-radius: 16px !important;
+  padding: 10px 20px 10px 20px;
+}
+
+.container-choose-view-task {
+  display: flex;
+  height: 100%;
+
+  .custom-choose-view-board {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border-bottom: 5px solid transparent;
+
+    .icon-choose-view path {
+      fill: #545962;
+    }
+
+    .text-choose-view {
+      font-size: 18px;
+    }
+
+    &.actived-board {
+      border-bottom: 5px solid #0085ff;
+
+      .icon-choose-view path {
+        fill: #0085ff;
+      }
+
+      .text-choose-view {
+        color: #0085ff;
+      }
+    }
+  }
+
+  .custom-choose-view-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border-bottom: 5px solid transparent;
+
+    .text-choose-view {
+      font-size: 18px;
+    }
+
+    &.actived-list {
+      border-bottom: 5px solid #0085ff;
+
+      .icon-choose-view path {
+        fill: #0085ff;
+      }
+
+      .text-choose-view {
+        color: #0085ff;
+      }
+    }
+  }
+
+  .bag-choose-view {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 100%;
+  }
+
+  .icon-choose-view {
+    margin-right: 10px;
+    margin-bottom: 6px;
+    width: 14px;
+    height: 14px;
+  }
+
+  .text-choose-view {
+    color: #545962;
+  }
+}
+
+.btn-add-project-admin {
+  width: 100%;
+  background: #dbebff !important;
+  color: #0085ff !important;
+  margin: 0 5px 5px 5px !important;
+  border-radius: 6px;
+  margin-bottom: 5px;
+}
+
+.search-task-by-name-container {
+  width: 300px;
+  position: relative;
+  padding: 0 20px;
+
+  .input-search-task-by-name {
+    width: 100%;
+    height: 35px;
+    outline: none;
+    padding: 0 25px;
+    border: 1px solid #e5ebf0;
+    border-radius: 7px;
+
+    &::placeholder {
+      color: #545962;
+    }
+  }
+
+  .icon-search-task-by-name {
+    position: absolute;
+    left: 26px;
+    top: 9px;
+    font-size: 16px;
+    color: #545962;
+  }
+}

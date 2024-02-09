@@ -1,0 +1,20 @@
+#login-grid {
+  height: 100vh;
+  .login-splash {
+    background-image: url(https://source.unsplash.com/random);
+    background-repeat: no-repeat;
+    background-color: #ccc;
+    background-size: cover;
+    background-position: center;
+  }
+  .login-form-container {
+    margin: 64px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .login-form {
+      margin-top: 8px;
+      width: 100%;
+    }
+  }
+}

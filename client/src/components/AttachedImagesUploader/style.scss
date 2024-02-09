@@ -1,0 +1,107 @@
+.upload__image-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+
+  .image-item-container {
+    margin: 0 20px 0 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .image-index-label {
+      font-size: 14px;
+      font-weight: 400;
+      padding: 10px 0;
+    }
+
+    .image-item {
+      width: 200px;
+      height: 140px;
+      position: absolute;
+      border-radius: 5px;
+
+      img {
+        width: 200px;
+        height: 140px;
+        border-radius: 5px;
+        border: 2px solid #c1c1c1;
+        object-fit: cover;
+      }
+    }
+
+    .custom-image-item {
+      position: relative;
+      width: 200px;
+      height: 140px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s;
+
+      &:hover {
+        // background: rgba(0, 0, 0, 0.5);
+
+        .icon-view-image-task {
+          opacity: 1;
+        }
+
+        .image-item-remove-button {
+          opacity: 1;
+        }
+      }
+
+      .icon-view-image-task {
+        position: absolute;
+        font-size: 30px;
+        top: 36px;
+        left: 85px;
+        color: #ffffff;
+        opacity: 0;
+      }
+
+      .image-item-remove-button {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        color: #b16882;
+        background: rgba(0, 0, 0, 0.2);
+        opacity: 0;
+
+        &:hover {
+          color: #fd71af;
+          background: rgba(0, 0, 0, 0.3);
+        }
+      }
+    }
+  }
+}
+
+.image-item-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  .add-item-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    border: 1.5px dashed #bfbfbf;
+    color: #b3bec9;
+    width: 200px;
+    height: 140px;
+    min-height: 100px;
+    position: relative;
+    border-radius: 5px;
+
+    &:hover {
+      border: 1.5px dashed #0085ff;
+      color: #0085ff;
+
+      path {
+        fill: #0085ff;
+      }
+    }
+  }
+}

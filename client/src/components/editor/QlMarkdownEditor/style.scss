@@ -1,0 +1,15 @@
+.ql-markdown-editor {
+  border-radius: 3px;
+
+  &:hover,
+  // &.focus {
+  //   border: 1px solid #dedede;
+  // }
+  .ql-tooltip {
+    z-index: 100;
+  }
+
+  .ql-picker-options {
+    right: 0;
+  }
+}

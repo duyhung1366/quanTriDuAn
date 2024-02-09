@@ -1,0 +1,323 @@
+.bug-checklist-container {
+    padding: 20px 0 0 20px;
+    position: relative;
+    width: 100%;
+
+    .group-button-filter-bug {
+        display: flex;
+
+        .btn-filter-bug {
+            width: fit-content;
+            border-radius: 20px;
+            font-size: 10px;
+            white-space: nowrap;
+            border: 1px dashed #DCDFE4;
+            outline: none;
+            padding: 5px 10px;
+            margin: 0 2px;
+            background: #FFFFFF;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+
+            .dot-color-btn-filter-bug {
+                width: 8px;
+                height: 8px;
+                border-radius: 3px;
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .title-bug-checklist {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 500px;
+        padding-bottom: 10px;
+
+        .title-bug-name {
+            font-size: 22px;
+            font-weight: 400;
+            min-width: 180px;
+        }
+
+        .btn-delete-bug-checklist {
+            opacity: 0;
+
+            &:hover {
+                background: #FFFFFF;
+                color: #0085FF;
+            }
+        }
+
+        &:hover {
+            .btn-delete-bug-checklist {
+                opacity: 1;
+            }
+        }
+    }
+
+
+    .container-bug-check-list-item {
+        display: flex;
+        align-items: center;
+        height: fit-content;
+        margin-top: 5px;
+        width: 100%;
+        padding-right: 20px;
+
+        .rename-bug-item {
+            border: 1px solid #1DB954;
+            margin: 0 5px 0 5px;
+            border-radius: 2px;
+            box-shadow: 0 0 6px 1px #C1C1C1;
+            width: 70%;
+
+            .input-rename-bug-item {
+                border: none;
+                outline: none;
+                font-size: 14px;
+                width: 100%;
+                padding: 0 5px 0 5px;
+
+            }
+        }
+
+        .group-ava-checklist {
+            cursor: pointer;
+            width: 24px;
+            height: 24px;
+            font-size: 15px;
+        }
+
+        .group-avatar-bug-checklist {
+            margin: 0 0 0 10px;
+
+            .item-assignees-bug-checklist {
+                cursor: pointer;
+                width: 24px;
+                height: 24px;
+            }
+        }
+
+
+
+        .edit-text-item-bug {
+            width: auto;
+            max-width: 70%;
+            word-wrap: break-word;
+            text-align: justify;
+            padding: 0 10px 0 10px;
+            font-size: 14px !important;
+            font-weight: 400;
+            border: 1px solid transparent;
+
+            &:hover {
+                cursor: pointer;
+                color: #0085FF;
+            }
+        }
+
+        .input-edit-text-item-bug {
+            // width: 100px;
+            display: inline-block !important;
+            max-width: 450px;
+            padding: 0 10px 0 10px;
+            border: 1px solid #DCDFE4;
+            border-radius: 3px;
+            outline: none;
+            font-size: 14px !important;
+            font-weight: 400;
+        }
+
+        .container-status-bug {
+            cursor: pointer;
+            width: 22px;
+            height: 22px;
+            border-radius: 4px;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .custom-icon-checkbox-bug {
+                fill: #D9D9D9;
+                width: 14px;
+                height: 14px;
+                border-radius: 2px;
+            }
+
+        }
+
+
+        .btn-rename-item-bug {
+            margin-left: 10px;
+
+            &:hover {
+                .icon-rename-item-bug path {
+                    fill: #0085FF;
+                }
+            }
+
+            .icon-rename-item-bug {
+                width: 24px;
+                height: 24px;
+                display: flex;
+
+                path {
+                    fill: #C1C1C1;
+
+                }
+            }
+        }
+
+        .btn-open-options-item-bug {
+            margin: 0 !important;
+            color: #C1C1C1;
+            padding: 2px !important;
+
+            &:hover {
+                background: #FFFFFF;
+                color: #0085FF;
+
+
+            }
+
+            .icon-hmore-options-bug {
+                font-size: 28px;
+
+            }
+        }
+
+    }
+
+    .form-add-new-item-bug {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 2vh;
+        margin: 5px 0 20px -10px;
+        border: 1px solid #1DB954;
+        padding: 16px 14px 16px 14px;
+
+        .head-line-add-item-bug {
+            width: 18px;
+            height: 15px;
+            background: #D9D9D9;
+            border-radius: 3px;
+            margin-right: 10px;
+        }
+
+        .input-add-item-bug {
+            border: none;
+            border-left: 1px solid #D9D9D9;
+            padding: 0 5px 0 5px;
+            font-size: 14px;
+            font-weight: 400;
+            width: 100%;
+
+            &:focus {
+                outline: 0;
+            }
+
+            &::placeholder {
+                font-size: 15px;
+                font-weight: 400;
+            }
+        }
+
+        .btn-save-new-item-bug {
+            width: 50px;
+            height: 20px;
+            cursor: pointer;
+            background: #1DB954;
+            color: #FFFFFF;
+            border: none;
+            border-radius: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 500;
+            border: 1px solid transparent;
+
+            &:hover {
+                border: 1px solid #DCDFE4;
+            }
+        }
+    }
+
+    .btn-add-bug-item-checklist {
+        cursor: pointer;
+        color: #AEACB0;
+        background: #FFFFFF;
+        border: none;
+        margin: 10px 0 20px 0;
+        font-size: 14px;
+
+        &:hover {
+            color: #0085FF;
+        }
+    }
+
+    .btn-assign-mem-to-checklist {
+        position: relative;
+        cursor: pointer;
+        border: 1px dashed #D9D9D9;
+        border-radius: 25px;
+        background: white;
+        width: 26px;
+        height: 26px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 10px 0 10px;
+        padding: 0 10px 0 10px;
+
+        .icon-add-assign-bug svg {
+            position: absolute;
+            margin: 3px 0 0 8px;
+            width: 9.24px;
+            height: 9.24px;
+        }
+
+        .icon-user-assign-bug svg {
+            width: 10.4px;
+            height: 10.4px;
+        }
+
+        &:hover {
+            border: 1px dashed #0085FF;
+
+            .icon-add-assign-bug circle {
+                fill: #0085FF;
+            }
+
+            .icon-user-assign-bug path {
+                fill: #0085FF;
+
+            }
+        }
+
+    }
+
+
+
+    .edit-text-new-item-bug {
+        width: 20vw;
+        margin: 10px 0 10px 27px;
+        padding: 0 10px 0 10px;
+    }
+}
+
+.btn-add-bug-checklist {
+    cursor: pointer;
+    color: #0085FF;
+    background: #FFFFFF;
+    border: none;
+    margin-left: 25px;
+
+    &:hover {
+        font-weight: 500;
+    }
+}

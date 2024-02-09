@@ -1,0 +1,152 @@
+.dialog-create-sprint {
+    .title-model-sprint {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        font-weight: 600;
+        height: 49px;
+        background: #E8E8EA;
+        padding: 10px !important;
+        border-bottom: 1px solid #DCDFE4;
+
+        .btn-close-model-sprint {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            right: 10px;
+            border: 1px solid #DCDFE4;
+            background: #FFFFFF;
+            border-radius: 5px;
+
+            &:hover {
+                .iconclose-title-model-sprint {
+                    color: #007AFF;
+                    transform: rotate(90deg);
+                }
+            }
+
+            .iconclose-title-model-sprint {
+                font-size: 18px;
+                color: #7d8087b0;
+                transition: transform 0.25s ease;
+            }
+        }
+    }
+
+    .container-name-sprint {
+        width: 100%;
+        height: 55px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin: 15px 0 20px 0;
+
+        .dot-color-project {
+            position: absolute;
+            left: 15px;
+            top: 16px;
+            width: 10px;
+            height: 10px;
+            border-radius: 10px;
+            background: #545962;
+        }
+
+        .textfield-name-sprint {
+            input {
+                padding: 15px 20px 15px 35px !important;
+
+            }
+        }
+    }
+
+    .dialog-create-sprint-paper {
+        max-width: 1000px !important;
+        max-height: fit-content;
+        width: 992px;
+        height: fit-content;
+        border-radius: 14px !important;
+    }
+
+}
+
+.dialog-content-popup-sprint {
+    margin-top: 10px;
+    overflow-y: hidden !important;
+
+    .name-project-model-sprint {
+        margin: 15px 0;
+        font-size: 18px;
+        font-weight: 600;
+
+    }
+
+    .description-model-sprint {
+        margin-top: 10px;
+
+        .cke_top {
+            background: #FFFFFF;
+        }
+
+        .cke_bottom {
+            background: #FFFFFF;
+
+        }
+    }
+}
+
+.group-select-sprint-model {
+    display: flex;
+    margin-top: 40px;
+
+    .input-date-sprint {
+        input {
+            height: 10px;
+            padding: 6px 12px !important;
+            border-right: 1px solid #DCDFE4;
+        }
+
+        button {
+            padding-right: 10px;
+
+            &:hover {
+                background: #FFFFFF;
+
+                path: {
+                    fill: #0085FF;
+                }
+            }
+        }
+    }
+
+    .select-status-sprint {
+        width: 200px;
+        margin-left: 20px;
+    }
+}
+
+
+.btn-cancle-updateOrcreate {
+    cursor: pointer;
+    width: 110px;
+    height: 38px;
+    border: none;
+    border-radius: 10px;
+    color: #545962;
+    background: #E8E8EA;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.btn-save-sprint {
+    cursor: pointer;
+    width: 110px;
+    height: 38px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background: #0085FF;
+    font-size: 18px;
+    margin-right: 15px;
+}

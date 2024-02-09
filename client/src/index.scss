@@ -1,0 +1,20 @@
+@import "./styles/mixins.scss";
+// @import "./assets/fonts/Comfortaa/font-face.scss";
+@import "./assets/fonts/SVN-Poppins/font-face.scss";
+
+* {
+  box-sizing: border-box;
+  font-family: 'SVN-Poppins', sans-serif !important;
+
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  @include custom-scroll();
+}

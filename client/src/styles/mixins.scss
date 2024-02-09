@@ -1,0 +1,49 @@
+@mixin custom-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #d0d0d0 #f9f9f9;
+  &::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+  }
+  &::-webkit-scrollbar-track {
+    border-radius: 7px;
+    background: #f9f9f9
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 7px;
+    background: #d0d0d0;
+    &:hover {
+      background: #8a8a8a;
+    }
+  }
+}
+
+@mixin transparent-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  &::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+  }
+  &::-webkit-scrollbar-track {
+    border-radius: 7px;
+    background: transparent
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 7px;
+    background: transparent;
+    &:hover {
+      background: transparent;
+    }
+  }
+}
+
+@mixin ellipsis-text($line) {
+  &.dot-#{$line} {
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $line !important;
+  }
+}
